@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="cursor-glow"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Portfolio</span>
+                <div class="logo-glow"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch-text">SANTHOSH J</span>
+            </h1>
+            <h1>
+             <span class="gradient-text">Full Stack Developer</span>
+            </h1>
+            <p class="hero-subtitle">Building Digital Experiences</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Work</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+                <a href="#" class="btn-resume" id="downloadResume">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">Passionate developer creating innovative digital solutions with cutting-edge technologies.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack Development</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Creative Design</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image"></div>
+                        <div class="profile-info">
+                            <h3>Available for Hire</h3>
+                            <p>Open to interesting projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a class="view-project" href="https://santhoshjks.github.io/jks_store/" style="text-decoration: none;">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">Modern shopping experience with HTML, CSS, JS, Appscript</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3
+                            </span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">Google Sheets</span>
+                            <span class="tag">Appscript</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                             <a class="view-project" href="https://santhoshjks.github.io/bloggram/" style="text-decoration: none;">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Platform </h3>
+                        <p class="project-description">Collaborative project with modern tools</p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">supabase</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <!-- SVG Gradients -->
+        <svg style="position: absolute; width: 0; height: 0;">
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#61dafb;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#21759b;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#68a063;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#3c873a;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#e34c26;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#f06529;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f89820;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#e76f00;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#3776ab;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffd43b;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1572b6;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#33a9dc;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Technologies I master and innovate with</p>
+            </div>
+            
+         
+                    
+            <!-- Skill Categories Grid -->
+            <div class="skills-grid">
+                <div class="skill-category-card frontend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <div class="category-glow"></div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-chip">
+                            <span>React.js</span>
+                            
+                        </div>
+                        <div class="skill-chip">
+                            <span>HTML5/CSS3</span>
+                            
+                        </div>
+                        <div class="skill-chip">
+                            <span>JavaScript</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category-card backend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <div class="category-glow"></div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-chip">
+                            <span>Node.js</span>
+                           
+                        </div>
+                        <div class="skill-chip">
+                            <span>Express.js</span>
+                           
+                        </div>
+                        <div class="skill-chip">
+                            <span>Java</span>
+                            
+                        </div>
+                        <div class="skill-chip">
+                            <span>Python</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category-card database">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database & Tools</h3>
+                        <div class="category-glow"></div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-chip">
+                            <span>MySQL</span>
+                           
+                        </div>
+                        <div class="skill-chip">
+                            <span>MongoDB</span>
+                            
+                        </div>
+                        <div class="skill-chip">
+                            <span>Git/GitHub</span>
+                           
+                        </div>
+                        <div class="skill-chip">
+                            <span>Google Sheets</span>
+                           
+                        </div>
+                        <div class="skill-chip">
+                            <span>Supabase</span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and create something amazing together</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-cards">
+                    <div class="contact-card email-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Email</h3>
+                            <p>santhoshjks456@gmail.com</p>
+                            <a href="mailto:santhoshjks456@gmail.com" class="contact-link">Send me an email</a>
+                        </div>
+                    </div>
+                    <div class="contact-card phone-card">
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Phone</h3>
+                            <p>+91 6383464154</p>
+                            <a href="tel:+916383464154" class="contact-link">Give me a call</a>
+                        </div>
+                    </div>
+                    <div class="contact-card location-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Location</h3>
+                            <p>Pillaiyar Kovil Street, Arambakkam, Padappai-601 301, Chennai, TamilNadu</p>
+                            <a href="https://www.google.com/maps/place/601301" class="contact-link">View on map</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-section">
+                    <h3>Connect on Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/santhoshjks?tab=repositories" class="social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/santhosh-j-a26a2320b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
