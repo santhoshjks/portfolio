@@ -4,6 +4,7 @@ class PortfolioApp {
         this.setupEventListeners();
         this.setupCursorGlow();
         this.setupScrollAnimations();
+        this.setupMobileMenu();
     }
 
     setupEventListeners() {
@@ -31,6 +32,39 @@ class PortfolioApp {
             resumeBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 this.handleResumeDownload();
+            });
+        }
+    }
+
+    setupMobileMenu() {
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        const icon = mobileBtn?.querySelector('i');
+
+        if (mobileBtn && navMenu) {
+            mobileBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+
+                // Toggle icon
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    document.body.style.overflow = '';
+                });
             });
         }
     }
