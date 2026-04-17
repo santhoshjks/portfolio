@@ -140,7 +140,7 @@ class PortfolioApp {
 
 
         // Path to your resume PDF file - relative path works better
-        const resumePath = 'SANTHOSH-J-Resume.pdf';
+        const resumePath = 'SANTHOSH_J_Resume.pdf';
 
         // Show loading feedback
         const originalText = resumeBtn.innerHTML;
@@ -156,7 +156,7 @@ class PortfolioApp {
                 if (response.ok) {
                     const a = document.createElement('a');
                     a.href = resumePath;
-                    a.download = 'SANTHOSH-J-Resume.pdf';
+                    a.download = 'SANTHOSH_J_Resume.pdf';
                     a.target = '_blank';
 
                     document.body.appendChild(a);
